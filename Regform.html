@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <!-- <link rel="shortcut icon" href="registration.png" type="image/x-icon"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon2/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon2/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon2/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+</head>
+<style>
+  input:focus{
+      background-color: aqua;
+  }
+
+</style>
+<body>
+  <fieldset>
+    <legend> <b>Student Registration Form Using Table in HTML </b></legend>
+
+    <br>
+    <form action="another.html">
+      <div>
+
+        <label for="fname">First Name: &nbsp;</label>
+        <input type="text" name="fname" id="fname" placeholder="Manshah" maxlength="10" required> (Max 10 Characters
+        Allowed)
+
+      </div>
+      <br>
+      <div>
+
+        <label for="lname">Last Name: &nbsp;</label>
+        <input type="text" name="lname" id="lname" placeholder="Maqsood" maxlength="10" required> (Max 10 Characters
+        Allowed)
+
+      </div>
+      <br>
+      <div>
+
+        <label for="password">Password: &nbsp;</label>
+        <input type="password" name="password" id="password"  placeholder="Manshah@123#" required>
+
+      </div>
+      <br>
+      <div>
+
+        <label for="fathersname">Father's Name : &nbsp;</label>
+        <input type="text" name="fathersname" id="fathersname" placeholder="Maqsood Ahmad" required>
+
+      </div>
+      <br>
+      <div>
+
+        <label for="mothersname">Mother's Name: &nbsp;</label>
+        <input type="text" name="mothersname" id="mothersname" placeholder="Afroza" required>
+
+      </div>
+      <br>
+      <div>
+
+        <label for="email">Email: &nbsp;</label>
+        <input type="email" name="email" id="email" placeholder="manshah@gmail.com" maxlength="20" required> (Max 30
+        Characters Allowed)
+
+      </div>
+      <br>
+      <div>
+
+        <label for="phone">Mobile: &nbsp;</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+      </div>
+      <br>
+      <div>
+        <label for="gender">Gender: &nbsp;</label>
+        Male <input type="radio" name="gender" id="gender"> Females <input type="radio" name="gender" id="gender"
+          required>
+
+      </div>
+      <br>
+      <div>
+
+        <label for="dateofbirth">Date Of Birth(DOB): &nbsp;</label>
+        <input type="date" name="dateofbirth" id="dateofbirth" required>
+
+      </div>
+      <br>
+      <div>
+
+        <label for="address">Address: &nbsp;</label>
+        <textarea name="address" id="address" placeholder="Current Address" cols="30" rows="10" required></textarea>
+
+      </div>
+      <br>
+
+      <div>
+
+        <label for="course">Course Applied For: </label>
+        <select name="course" id="course" required>
+          <option value="">None</option>
+          <option value="BCA">BCA (Bachelor of Computer Applications) </option>
+          <option value="BTech">BTech(Bachelor of Technology)</option>
+          <option value="B.Com">BCom(Bachelor of Commerce)</option>
+          <option value="BA">B.A(Bachelor of Arts)</option>
+          <option value="B.SC">B.SC(Bachelor of Sceince)</option>
+          <option value="MCA">MCA(Master of Computer Application)</option>
+          <option value="Mtech">MTech(Master of Technology)</option>
+          <option value="M.Com">Mcom(Master of Commerce)</option>
+          <option value="MA">MA(Master of Arts)</option>
+          <option value="M.SC">MSc(Master of Science)</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="campus">Campus Preference :&nbsp;</label>
+        <select name="campus" id="campus" required>
+          <option value="">None</option>
+          <option value="main">Main Campus</option>
+          <option value="south">South Campus</option>
+          <option value="north">North Campus</option>
+        </select>
+      </div>
+      <br>
+      <div>
+        <label for="phote">Photo</label>
+        <input type="file" name="photo" id="photo" required>
+      </div>
+      <br>
+      <div>
+        <input type="checkbox" name="terms" id="terms"> I accept the <u>Terms and Conditions</u>
+      </div>
+      <br>
+      <div>
+
+        <button class="submit" type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </div>
+    </form>
+  </fieldset>
+</body>
+
+</html>
